@@ -1,5 +1,5 @@
 body {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
 }
 
 body a {
@@ -48,10 +48,18 @@ h1 {
     padding: 10px;
 }
 
+.boldtext {
+    font-weight: 700;
+}
+
 .section {
     grid-column: 1 / span 4;
     background-color: #f2f2f2;
     padding: 0 0 15px 15px;
+}
+
+.section div {
+    padding: 0 0 5px 0;
 }
 
 #home {
@@ -74,8 +82,9 @@ h1 {
 
 .list1 {
     grid-column: 1/ span 4;
-    background-color: #00B2A9;
+    background-color: #9A3324;
     padding: 0 0 15px 15px;
+    color: white;
 }
 
 .linkblock1 {
@@ -95,6 +104,12 @@ h1 {
 }
 
 .linkblock1 p {
+    color: #ffffff;
+    padding: 0 0 0 15px;
+}
+
+.linkblock1 a {
+    display: block;
     background-color: #FFCB05;
     margin: 15px;
     padding: 10px;
@@ -108,12 +123,28 @@ h1 {
     margin: 15px 0 0 0;
 }
 
-.linkblock2 {
+.linkblock2 h2 {
+    color: #ffffff;
+    padding: 0 0 0 15px;
+}
+
+.linkblock2 h3 {
     color: #ffffff;
     padding: 0 0 0 15px;
 }
 
 .linkblock2 p {
+    color: #ffffff;
+    padding: 0 0 0 15px;
+}
+
+.linkblock2 li {
+    color: #ffffff;
+    padding: 0 0 0 15px;
+}
+
+.linkblock2 a {
+    display: block;
     background-color: #FFCB05;
     margin: 15px;
     padding: 10px;
@@ -123,6 +154,7 @@ h1 {
 footer {
     background-color: #00274C;
     padding: 15px;
+    margin: 15px 0 0 0;
     color: white;
 }
 
