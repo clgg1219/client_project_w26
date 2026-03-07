@@ -9,6 +9,7 @@ body a {
 nav {
     background-color: #00274C;
     padding: 15px;
+    margin: 0 0 15px 0;
 }
 
 nav a {
@@ -45,17 +46,48 @@ iframe {
 
 h1 {
     background-color: #FFCB05;
+    padding: 15px;
+    font-size: 32px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 24px;
     padding: 10px;
+    margin: 10px 0 0 0;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+p {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+ul, ol {
+    padding: 0 0 0 20px;
+    margin: 0 0 0 20px;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
 }
 
 .boldtext {
     font-weight: 700;
+    padding: 10px 10px 0 10px; 
 }
 
 .section {
     grid-column: 1 / span 4;
     background-color: #f2f2f2;
     padding: 0 0 15px 15px;
+    margin: 10px;
 }
 
 .section div {
@@ -85,12 +117,14 @@ h1 {
     background-color: #9A3324;
     padding: 0 0 15px 15px;
     color: white;
+    margin: 10px;
 }
 
 .linkblock1 {
     grid-column: 1/ span 4;
     background-color: #575294;
     padding: 5px;
+    margin: 10px;
 }
 
 .linkblock1 h2 {
@@ -120,7 +154,7 @@ h1 {
     grid-column: 1/ span 4;
     background-color: #702082;
     padding: 5px;
-    margin: 15px 0 0 0;
+    margin: 10px;
 }
 
 .linkblock2 h2 {
