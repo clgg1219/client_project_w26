@@ -1,3 +1,14 @@
+.skip {
+    position: absolute;
+    top: -60px;
+}
+
+.skip:focus {
+    top: 0px;
+    color: #00274C;
+    background-color: #FFCB05;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
