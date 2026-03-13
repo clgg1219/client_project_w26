@@ -92,7 +92,7 @@ li {
 
 .boldtext {
     font-weight: 700;
-    padding: 10px 10px 0 10px; 
+    padding: 10px 10px 0 10px;
 }
 
 .section {
@@ -108,7 +108,7 @@ li {
 
 #home {
     background: #f2f2f2;
-    padding: 15px;
+    padding: 0 15px 15px 15px;
 }
 
 .start {
