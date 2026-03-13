@@ -4,6 +4,7 @@
 }
 
 .skip:focus {
+    position: absolute;
     top: 0px;
     color: #00274C;
     background-color: #FFCB05;
