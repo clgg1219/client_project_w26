@@ -149,6 +149,16 @@ li {
     padding: 0 15px 15px 15px;
 }
 
+#connect a{
+    text-decoration: underline;
+}
+
+#connect a:hover{
+    border: solid #00274C;
+    background-color: #f2f2f2;
+    color:#00274C;
+}
+
 .start {
     width: 160px;
     display: flex;
