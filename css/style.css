@@ -5,30 +5,68 @@
 
 .skip:focus {
     position: absolute;
-    top: 0px;
+    top: 25px;
     color: #00274C;
     background-color: #FFCB05;
+    padding: 15px;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
 }
 
-body a {
+main a {
     color: #00274C;
+}
+
+main a:hover {
+    background-color: #00274C;
+    color: #FFCB05;
+    border: solid 2px #FFCB05;
 }
 
 nav {
     background-color: #00274C;
     padding: 15px;
     margin: 0 0 15px 0;
+    display: flex;
+    align-items: flex-end;
 }
 
 nav a {
     color: #FFCB05;
     padding: 0 15px 0 0;
     text-decoration: none;
-    align-items: end;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.activehome {
+    text-decoration: underline;
+}
+
+.activeresume {
+    text-decoration: underline;
+}
+
+.activenetwork{
+    text-decoration: underline;
+}
+
+.activesearch {
+    text-decoration: underline;
+}
+
+footer a {
+    color: #FFCB05;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFCB05;
+    text-decoration: underline;
 }
 
 .skip {
@@ -106,7 +144,7 @@ li {
     padding: 0 0 5px 0;
 }
 
-#home {
+#mainsection {
     background: #f2f2f2;
     padding: 0 15px 15px 15px;
 }
@@ -132,25 +170,31 @@ li {
     margin: 10px;
 }
 
+.list2 {
+    grid-column: 1/ span 4;
+    background-color: #702082;
+    padding: 0 0 15px 15px;
+    color: white;
+    margin: 10px;
+}
+
 .linkblock1 {
     grid-column: 1/ span 4;
     background-color: #575294;
     padding: 5px;
     margin: 10px;
+    color: #ffffff;
 }
 
 .linkblock1 h2 {
-    color: #ffffff;
     padding: 0 0 0 15px;
 }
 
 .linkblock1 h3 {
-    color: #ffffff;
     padding: 0 0 0 15px;
 }
 
 .linkblock1 p {
-    color: #ffffff;
     padding: 0 0 0 15px;
 }
 
@@ -162,39 +206,60 @@ li {
     text-align: center;
 }
 
-.linkblock2 {
-    grid-column: 1/ span 4;
-    background-color: #702082;
-    padding: 5px;
+.form {
+    background-color: #2F65A7;
+    color: #ffffff;
+    padding: 15px;
     margin: 10px;
+    grid-column: 1 / span 4;
+    display: grid;
 }
 
-.linkblock2 h2 {
-    color: #ffffff;
-    padding: 0 0 0 15px;
-}
-
-.linkblock2 h3 {
-    color: #ffffff;
-    padding: 0 0 0 15px;
-}
-
-.linkblock2 p {
-    color: #ffffff;
-    padding: 0 0 0 15px;
-}
-
-.linkblock2 li {
-    color: #ffffff;
-    padding: 0 0 0 15px;
-}
-
-.linkblock2 a {
+label {
     display: block;
+    margin: 0;
+}
+
+input {
+    display: block;
+    height: 2em;
+    width: 50%;
+    margin: 0 5px 20px 5px;
+}
+
+select, option {
+    display: block;
+    height: 3em;
+    width: 50%;
+    margin: 0 5px 20px 5px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 5em;
+    margin: 0 20px 0 0;
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    height: 3em;
+    margin: 30px 15px 15px 15px;
     background-color: #FFCB05;
+    color:#00274C;
+    justify-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+#submit:hover {
+    width: 100%;
+    height: 3em;
     margin: 15px;
-    padding: 10px;
-    text-align: center;
+    background-color: #00274C;
+    color:#FFCB05;
+    margin: 30px 15px 15px 15px;
 }
 
 footer {
@@ -206,4 +271,163 @@ footer {
 
 footer a {
     color: #FFCB05;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    border: solid #FFCB05;
+}
+
+.errorcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: space-between;
+}
+
+.message {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+}
+
+#errorh1 {
+        font-size: 48px;
+        text-align: center;
+        background-color: #ffffff;
+        margin: 0 0;
+        padding: 0 0;
+}
+
+#errorp {
+        text-align: center;
+}
+
+#errorlink {
+        background-color: #00274C;
+        color:#FFCB05;
+        text-decoration: none;
+        padding: 15px;
+        margin: 15px;
+        width: 50%;
+        align-self: center;
+        text-align: center;
+}
+
+#errorlink:hover {
+        text-decoration: underline;
+        border: none;
+}
+
+@media (min-width: 800px) {
+    #mainsection {
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 2;
+    }
+
+    #mainsectionwide {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 1;
+    }
+
+    .linkblock1 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 3;
+    }
+
+    .linkblock1 h2 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 3;
+        margin: 10px 10px 15px 0;
+    }
+
+    .linkblock1 a {
+        margin: 20px 15px;
+    }
+
+    .connect {
+        grid-column: 2 / span 3;
+        grid-row: 3 span 1;
+    }
+
+    .form {
+        grid-column: 1 / span 4;
+        grid-row: 4 span 1;
+    }
+
+    .video {
+        width: 60%;
+        aspect-ratio: 16 / 9;
+        justify-self: center;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .image {
+        justify-self: center;
+        margin: 40px
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #mainwide {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 1;
+    }
+
+   .searchlist1 {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+   }
+   .searchlist2 {
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 1;
+   }
+
+   .searchlinks {
+        grid-column: 1 / span 4;
+        grid-row: 3 / span 1;
+   }
+
+    .networklist {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    .networklinks {
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    .maincontent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        padding: 0;
+    }
+
+    text {
+        grid-column: 2 / span 1;
+    }
+
+    image {
+        grid-column: 1 / span 1;
+    }
+
+    .resumelist {
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    .resumelinks {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+    }
 }

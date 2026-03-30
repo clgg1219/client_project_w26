@@ -16,27 +16,39 @@
           <a href = "index.html">Home</a>
           <a href = "resume.html">Resumes</a>
           <a href = "network_and_connections.html">Networking & Connections</a>
-          <a href = "job_internship_search.html">Job/Internship Planning and Search</a>
+          <a href = "job_internship_search.html" class="activesearch">Job/Internship Planning and Search</a>
         </nav>
         <h1>Job and Internship Searching and Planning</h1>
     </header>
     <main id = "maincontent">
-        <section class="section">
+        <section class="section" id="mainsectionwide">
             <h2>How do I start planning to search for internships?</h2>
-            <p>You are a student, and you know that internships are an invaluable aspect of starting a career, so you would like to start searching for internships.
-                However, the prospect of starting this process is daunting (and understandably so)! Fortunately, planning can help you develop a focused approach
-                to identifying what you are looking for in an internship, as well as help you gather all your materials to apply and then track your applications.
-            </p>
-            <img src = "images/UMSI_CareerFair2020_09.JPG" width = 800 alt = "Student talks to Yelp employer at career fair">
-            <p>Here are some things to think about before starting the search:</p>
-            <ul>
+            <div class="maincontent">
+                <div class="text">
+                    <p>You are a student, and you know that internships are an invaluable aspect of starting a career, so you would like to start searching for internships.
+                        However, the prospect of starting this process is daunting (and understandably so)! Fortunately, planning can help you develop a focused approach
+                        to identifying what you are looking for in an internship, as well as help you gather all your materials to apply and then track your applications.
+                    </p>
+                    <p>As a student, you have access to a wide range of tools to look for jobs, both university-specific and more broadly. This includes this page,
+                        as well as some online job search tools to get you started!
+                    </p>
+                </div>
+                <div class="image">
+                    <img src = "images/UMSI_CareerFair2020_09.JPG" width = 800 alt = "Student talks to Yelp employer at career fair">
+                </div>
+            </div>
+        </section>
+        <section class="list1 searchlist1">
+            <h2>Some Things to Think About Before Starting the Search</h2>
+             <ul>
                 <li>What industry(ies) do I want to work in?</li>
                 <li>Do I want a remote, in-person, or hybrid internship? Why?</li>
                 <li>What are my values?</li>
                 <li>What do I value in a workplace; what is my ideal workplace culture?</li>
             </ul>
-            <p>Then, after thinking the above questions through, your materials can be prepared for the search. These can be as follows:
-            </p>
+        </section>
+        <section class="list2 searchlist2">
+            <h2>Job/Internship Search Materials</h2>
             <ul>
                 <li>A spreadsheet tracking the statuses of all your applications</li>
                 <li>A well-formatted and updated resume</li>
@@ -44,8 +56,7 @@
                 <li>An elevator pitch (if you plan on attending a career fair)</li>
             </ul>
         </section>
-
-        <section class="linkblock1">
+        <section class="linkblock1 searchlinks">
             <h2>Where Do I Search for Internships?</h2>
             <p>So, after planning, you are ready to start searching and applying for jobs.
                 However, you are not sure where to start. No worries, there are plenty of resources for you to find roles, both in-person and online!
@@ -57,7 +68,17 @@
         </section>
     </main>
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a> | 2200 Hayward Street
+Ann Arbor, MI 48109-2121</p>
+        <p>Contact Us:</p>
+        <ul>
+          <li>Phone number: (734) 647-7650</li>
+          <li>Email: <a href="mailto:umsi.careers@umich.edu">umsi.careers@umich.edu</a></li>
+        </ul>
+        <p>© Copyright <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

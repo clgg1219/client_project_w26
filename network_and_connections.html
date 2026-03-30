@@ -15,22 +15,36 @@
           <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="logo">
           <a href = "index.html">Home</a>
           <a href = "resume.html">Resumes</a>
-          <a href = "network_and_connections.html">Networking & Connections</a>
+          <a href = "network_and_connections.html" class="activenetwork">Networking & Connections</a>
           <a href = "job_internship_search.html">Job/Internship Planning and Search</a>
         </nav>
         <h1>Guide to Networking</h1>
     </header>
     <main id = "maincontent">
-        <section class="section">
+        <section class="section" id="mainsectionwide">
             <h2>Why Network?</h2>
-            <p>While your resume, portfolio, and skills are important aspects of job-hunting, connections are arguably just as important! 
-                Building strong relationships with those in your target industries and career area can help you learn about working in specific roles and companies, as well as gain valuable advice!
-                Plus, networking helps build soft skills that are valuable in professional development, such as communication!
-            </p>
-            <img src = "images/UMSI_CareerFair_02062025_07.jpg" width = 800 alt = "Student talks to employer at career fair">
+            <div class="maincontent">
+                <div class="text">
+                    <p>While your resume, portfolio, and skills are important aspects of job-hunting, connections are arguably just as important! 
+                        Building strong relationships with those in your target industries and career area can help you learn about working in specific roles and companies, as well as gain valuable advice!
+                        Plus, networking helps build soft skills that are valuable in professional development, such as communication!
+                    </p>
+                    <p>One great thing about the School of Information, and the University of Michigan in general, is the large and diverse alumni base!
+                        Currently, there are over 12,000 active alumni from SI! That is a lot of potential people to network with! Networking with alumni is 
+                        a great way to learn about the career trajectories of those who were in your shoes years ago.
+                    </p>
+                     <p>Networking can be scary, but this page provides you with the information you need to feel more confident in starting!
+                        Remember, it's okay to feel nervous at first! Even the smallest acts of networking can help you with your career; it can
+                        help you build confidence in later endeavors!
+                    </p>
+                </div>
+                <div class="image">
+                    <img src = "images/UMSI_CareerFair_02062025_07.jpg" width = 800 alt = "Student talks to employer at career fair">
+                </div>
+            </div>
         </section>
 
-        <section class="list1">
+        <section class="list1 networklist">
             <h2>Who Should I Network With?</h2>
             <p>Networking can both be done with those who are well-established in their careers, or peers who are also starting out in their careers (they will eventually be other working professionals, just like how you will be)!
                 Having a diverse network can help with gaining an equally diverse set of perspectives.
@@ -51,7 +65,7 @@
             </ul>
         </section>
 
-        <section class="linkblock2">
+        <section class="linkblock1 networklinks">
             <h2>How to Network?</h2>
             <p>Networking can be done in a variety of ways! It can be done online, in-person, or even on phone!
                 It can be done through university, or non-university resources, through conventional and unusual methods- the possibilities are endless!
@@ -72,8 +86,18 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+   <footer>
+        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a> | 2200 Hayward Street
+Ann Arbor, MI 48109-2121</p>
+        <p>Contact Us:</p>
+        <ul>
+          <li>Phone number: (734) 647-7650</li>
+          <li>Email: <a href="mailto:umsi.careers@umich.edu">umsi.careers@umich.edu</a></li>
+        </ul>
+        <p>© Copyright <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
