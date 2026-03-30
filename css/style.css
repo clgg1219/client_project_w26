@@ -359,12 +359,10 @@ footer a:hover {
 
     .connect {
         grid-column: 2 / span 3;
-        grid-row: 3 span 1;
     }
 
     .form {
         grid-column: 1 / span 4;
-        grid-row: 4 span 1;
     }
 
     .video {
